@@ -1,0 +1,70 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.page-footer {
+  display: flex;
+  align-items: baseline;
+
+  &__footer-form {
+    margin-left: auto;
+  }
+}
+
+.address {
+  display: block;
+
+  &__list {
+    @include font(400, 14px, 1.71, 0.03em);
+    margin-right: 70px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  &__link-town {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &__link-footer {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__title {
+  @include font(700, 14px, 1.14, 0.03em);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-send {
+  display: flex;
+
+  &__input {
+    @include font(400, 16px, 1.25, 0.03em);
+    @extend %list;
+    min-width: 358px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    background: #2f303a;
+    outline: none;
+
+    &:focus-visible {
+      border: 1px solid var(--accent-color);
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}

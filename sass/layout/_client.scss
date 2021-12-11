@@ -1,0 +1,32 @@
+.client {
+  &__client-list {
+    margin-top: 50px;
+  }
+}
+.client-list {
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__link {
+    @extend %list;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    background-color: #ffffff;
+    color: #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
