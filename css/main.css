@@ -503,6 +503,7 @@ ul {
   margin-right: 70px;
   margin-top: 20px;
   text-decoration: none;
+  font-style: normal;
 }
 
 .address__link-town {
